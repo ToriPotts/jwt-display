@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'jwt-disply'`, () => {
+  it(`should have as title 'jwt-display'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('jwt-disply');
+    expect(app.title).toEqual('jwt-display');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('jwt-disply app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('jwt-display app is running!');
   });
 });
